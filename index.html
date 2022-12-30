@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="style.css" rel="stylesheet">
+    <title>Sort</title>
+</head>
+<body>
+<div class="input">
+    <label for="input">Input list here</label>
+    <textarea name="input" id="input" cols="30" rows="40" class="input__textarea"></textarea>
+    <button class="submit" type="button">Submit</button>
+</div>
+
+<div class="main">
+    <h1 class="main__word">Word</h1>
+
+    <div class="statistic">
+       <div class="statistic__row"><span class="statistic__label">all: </span><span class="statistic__item statistic__item--all">0</span></div>
+       <div class="statistic__row"><span class="statistic__label">done: </span><span class="statistic__item statistic__item--done">0</span></div>
+       <div class="statistic__row"><span class="statistic__label">left: </span><span class="statistic__item statistic__item--left">0</span></div>
+       <div class="statistic__row"><span class="statistic__label">know: </span><span class="statistic__item statistic__item--know">0</span></div>
+       <div class="statistic__row"><span class="statistic__label">new: </span><span class="statistic__item statistic__item--new">0</span></div>
+       <div class="statistic__row"><span class="statistic__label">other: </span><span class="statistic__item statistic__item--other">0</span></div>
+    </div>
+</div>
+
+<div class="output">
+    <div class="output__item">
+        <label for="new">New</label>
+        <textarea name="new" id="new" cols="30" rows="10" class="input__new"></textarea>
+        <button class="copy-new">Copy</button>
+    </div>
+    <div class="output__item">
+        <label for="know">Know</label>
+        <textarea name="know" id="know" cols="30" rows="10" class="input__know"></textarea>
+        <button class="copy-know">Copy</button>
+    </div>
+    <div class="output__item">
+        <label for="other">Other</label>
+        <textarea name="other" id="other" cols="30" rows="10" class="input__other"></textarea>
+        <button class="copy-other">Copy</button>
+    </div>
+</div>
+
+<script src="script.js" type="module"></script>
+</body>
+</html>
